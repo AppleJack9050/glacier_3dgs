@@ -20,7 +20,7 @@ set -euo pipefail
 # ============================================================
 
 # ---------------- Config ----------------
-SCENE_DIR="${1:-$PWD/workspace}"
+SCENE_DIR="$1"
 COLMAP_BIN="${COLMAP_BIN:-colmap}"
 OVERWRITE="${OVERWRITE:-0}"
 

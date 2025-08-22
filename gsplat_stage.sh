@@ -30,7 +30,7 @@ fi
 echo "[INFO] Activated conda env: $CONDA_ENV"
 
 # -------- Config --------
-SCENE_DIR="workspace"
+SCENE_DIR="$1"
 DATA_DIR="$SCENE_DIR/image_2"
 RESULT_DIR="$SCENE_DIR/gsplat_outputs"
 GPU_ID="${GPU_ID:-0}"
@@ -38,7 +38,7 @@ DATA_FACTOR="${DATA_FACTOR:-2}"
 PYTHON_BIN="${PYTHON_BIN:-python}"
 
 # Path to directory containing simple_trainer.py
-TRAINER_DIR="nerfstudio_gsplat"
+TRAINER_DIR="~/Documents/gsplat/examples"
 TRAINER_FILE="$TRAINER_DIR/simple_trainer.py"
 
 # Ensure output folder exists
